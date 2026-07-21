@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú — Aroma Cafetería</title>
+<meta name="description" content="Carta completa de Aroma: bebidas calientes, bebidas frías, postres y snacks.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-aroma sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="fa-solid fa-mug-hot"></i> Aroma</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item ms-lg-3"><a class="btn-aroma" href="contacto.html">Reservar mesa</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero pb-0">
+  <div class="coffee-ring" style="width:300px;height:300px;top:-90px;right:-90px;"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8" data-aos="fade-up">
+        <p class="eyebrow mb-3">Nuestra carta</p>
+        <h1 class="mb-3">Un menú pensado para cada momento del día.</h1>
+        <p class="lead">Bebidas calientes, frías, postres de casa y algo salado para acompañar. Todo preparado al momento.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="pt-3">
+  <div class="container">
+    <div class="d-flex flex-wrap gap-2 mb-5" data-aos="fade-up">
+      <button class="menu-cat-btn active" data-filter="todos">Todos</button>
+      <button class="menu-cat-btn" data-filter="calientes">Bebidas calientes</button>
+      <button class="menu-cat-btn" data-filter="frias">Bebidas frías</button>
+      <button class="menu-cat-btn" data-filter="postres">Postres</button>
+      <button class="menu-cat-btn" data-filter="snacks">Snacks</button>
+    </div>
+
+    <!-- Bebidas calientes -->
+    <div data-category="calientes" data-aos="fade-up">
+      <h3 class="mb-3"><i class="fa-solid fa-mug-hot me-2" style="color:var(--caramel);"></i>Bebidas calientes</h3>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="menu-item">
+            <div><h5>Espresso</h5><p>Shot doble, tueste medio.</p></div>
+            <span class="price">S/ 7.00</span>
+          </div>
+          <div class="menu-item">
+            <div><h5>Americano</h5><p>Espresso alargado con agua caliente.</p></div>
+            <span class="price">S/ 8.50</span>
+          </div>
+          <div class="menu-item">
+            <div><h5>Cappuccino</h5><p>Espresso, leche vaporizada y espuma densa.</p></div>
+            <span class="price">S/ 11.50</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="menu-item">
+            <div><h5>Flat White Aroma</h5><p>Nuestra firma, leche a punto de seda.</p></div>
+            <span class="price">S/ 12.50</span>
+          </div>
+          <div class="menu-item">
+            <div><h5>Mocha</h5><p>Espresso, chocolate 70% y leche.</p></div>
+            <span class="price">S/ 13.00</span>
+          </div>
+          <div class="menu-item">
+            <div><h5>Chai latte</h5><p>Especias, leche vaporizada y miel.</p></div>
+            <span class="price">S/ 12.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5" style="border-top:1px dashed rgba(44,27,20,.25);">
+
+    <!-- Bebidas frías -->
+    <div data-category="frias" data-aos="fade-up">
+      <h3 class="mb-3"><i class="fa-solid fa-snowflake me-2" style="color:var(--caramel);"></i>Bebidas frías</h3>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="menu-item">
+            <div><h5>Cold Brew de origen</h5><p>Extracción en frío 16 horas.</p></div>
+            <span class="price">S/ 14.00</span>
+          </div>
+          <div class="menu-item">
+            <div><h5>Iced Latte</h5><p>Espresso, leche fría y hielo.</p></div>
+            <span class="price">S/ 12.50</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="menu-item">
+            <div><h5>Frappé de caramelo</h5><p>Café frappé con caramelo artesanal.</p></div>
+            <span class="price">S/ 15.00</span>
+          </div>
+          <div class="menu-item">
+            <div><h5>Limonada de hierbabuena</h5><p>Opción sin cafeína, refrescante.</p></div>
+            <span class="price">S/ 10.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5" style="border-top:1px dashed rgba(44,27,20,.25);">
+
+    <!-- Postres -->
+    <div data-category="postres" data-aos="fade-up">
+      <h3 class="mb-3"><i class="fa-solid fa-cake-candles me-2" style="color:var(--caramel);"></i>Postres</h3>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="menu-item">
+            <div><h5>Alfajor de algarrobina</h5><p>Receta de casa, horneado diario.</p></div>
+            <span class="price">S/ 8.00</span>
+          </div>
+          <div class="menu-item">
+            <div><h5>Brownie de chocolate</h5><p>Con nueces, textura fudgy.</p></div>
+            <span class="price">S/ 9.50</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="menu-item">
+            <div><h5>Cheesecake de maracuyá</h5><p>Base de galleta, cobertura de fruta.</p></div>
+            <span class="price">S/ 13.00</span>
+          </div>
+          <div class="menu-item">
+            <div><h5>Torta sin gluten</h5><p>Receta rotativa según temporada.</p></div>
+            <span class="price">S/ 12.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5" style="border-top:1px dashed rgba(44,27,20,.25);">
+
+    <!-- Snacks -->
+    <div data-category="snacks" data-aos="fade-up">
+      <h3 class="mb-3"><i class="fa-solid fa-bread-slice me-2" style="color:var(--caramel);"></i>Snacks</h3>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="menu-item">
+            <div><h5>Sándwich de pollo</h5><p>Pan artesanal, palta y vegetales.</p></div>
+            <span class="price">S/ 15.00</span>
+          </div>
+          <div class="menu-item">
+            <div><h5>Croissant de jamón y queso</h5><p>Horneado al momento.</p></div>
+            <span class="price">S/ 11.00</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="menu-item">
+            <div><h5>Bowl de fruta de estación</h5><p>Opción ligera y fresca.</p></div>
+            <span class="price">S/ 10.50</span>
+          </div>
+          <div class="menu-item">
+            <div><h5>Tostada de palta</h5><p>Pan de masa madre, huevo poché opcional.</p></div>
+            <span class="price">S/ 14.50</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark-coffee text-center">
+  <div class="container" data-aos="zoom-in">
+    <p class="eyebrow mb-2" style="color:var(--gold);">¿Antojo de algo?</p>
+    <h2 class="mb-4">Haz tu pedido para llevar o resérvalo en mesa.</h2>
+    <a href="contacto.html" class="btn-aroma">Contáctanos</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5><i class="fa-solid fa-mug-hot"></i> Aroma</h5>
+        <p class="mt-2" style="color:var(--cream-2);">Café de especialidad tostado en Lima. Un espacio hecho para pausas con sentido.</p>
+        <div class="mt-3">
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Navegación</h5>
+        <ul class="list-unstyled mt-2">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5>Horario</h5>
+        <ul class="list-unstyled mt-2" style="color:var(--cream-2);">
+          <li>Lun – Vie: 7:00 am – 9:00 pm</li>
+          <li>Sáb – Dom: 8:00 am – 10:00 pm</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5>Contacto</h5>
+        <ul class="list-unstyled mt-2" style="color:var(--cream-2);">
+          <li><i class="fa-solid fa-location-dot me-2"></i>Av. Los Cafetos 245, Lima</li>
+          <li><i class="fa-solid fa-phone me-2"></i>+51 999 888 777</li>
+          <li><i class="fa-solid fa-envelope me-2"></i>hola@aroma.pe</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine-print text-center">© 2026 Aroma Cafetería. Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

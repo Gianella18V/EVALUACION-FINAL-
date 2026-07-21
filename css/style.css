@@ -1,0 +1,378 @@
+/* =========================================================
+   AROMA — Cafetería de especialidad
+   Hoja de estilos principal
+   ========================================================= */
+
+:root{
+  --coffee-dark:#2c1b14;
+  --coffee:#6f4e37;
+  --caramel:#c08552;
+  --cream:#fbf3e7;
+  --cream-2:#f3e5d3;
+  --sage:#6b7f5e;
+  --gold:#c9a24b;
+  --ink:#241610;
+
+  --font-display:'Fraunces', serif;
+  --font-body:'Work Sans', sans-serif;
+  --font-mono:'Space Mono', monospace;
+
+  --radius: 18px;
+}
+
+*{ box-sizing:border-box; }
+
+html{ scroll-behavior:smooth; }
+
+body{
+  font-family:var(--font-body);
+  background:var(--cream);
+  color:var(--ink);
+  overflow-x:hidden;
+}
+
+h1,h2,h3,h4,.display{
+  font-family:var(--font-display);
+  color:var(--coffee-dark);
+  font-weight:900;
+}
+
+.eyebrow{
+  font-family:var(--font-mono);
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-size:.78rem;
+  color:var(--caramel);
+  font-weight:700;
+}
+
+a{ text-decoration:none; }
+
+/* ---------- Textura de fondo: manchas de café ---------- */
+.coffee-ring{
+  position:absolute;
+  border-radius:50%;
+  border:2px solid var(--coffee);
+  opacity:.08;
+  pointer-events:none;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-aroma{
+  background:var(--cream);
+  border-bottom:1px solid rgba(44,27,20,.1);
+  padding:.9rem 0;
+}
+.navbar-aroma .navbar-brand{
+  font-family:var(--font-display);
+  font-weight:900;
+  font-size:1.6rem;
+  color:var(--coffee-dark)!important;
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+}
+.navbar-aroma .navbar-brand i{ color:var(--caramel); }
+.navbar-aroma .nav-link{
+  font-family:var(--font-mono);
+  font-size:.85rem;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  color:var(--ink)!important;
+  margin:0 .4rem;
+  position:relative;
+  padding-bottom:4px;
+}
+.navbar-aroma .nav-link.active,
+.navbar-aroma .nav-link:hover{ color:var(--caramel)!important; }
+.navbar-aroma .nav-link.active::after{
+  content:"";
+  position:absolute;
+  left:0; bottom:0;
+  width:100%; height:2px;
+  background:var(--caramel);
+}
+.btn-aroma{
+  background:var(--coffee-dark);
+  color:var(--cream)!important;
+  font-family:var(--font-mono);
+  font-size:.82rem;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  padding:.55rem 1.3rem;
+  border-radius:50px;
+  border:none;
+  transition:.25s ease;
+}
+.btn-aroma:hover{ background:var(--caramel); color:var(--coffee-dark)!important; }
+.btn-outline-aroma{
+  border:1.5px solid var(--coffee-dark);
+  color:var(--coffee-dark);
+  font-family:var(--font-mono);
+  font-size:.82rem;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  padding:.5rem 1.25rem;
+  border-radius:50px;
+  transition:.25s ease;
+  background:transparent;
+}
+.btn-outline-aroma:hover{ background:var(--coffee-dark); color:var(--cream); }
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  padding:6rem 0 5rem;
+  overflow:hidden;
+}
+.hero h1{
+  font-size:clamp(2.6rem,6vw,4.4rem);
+  line-height:1.05;
+}
+.hero .lead{
+  font-size:1.15rem;
+  color:#4a372d;
+  max-width:520px;
+}
+.hero-img-wrap{
+  position:relative;
+}
+.hero-img-wrap img{
+  border-radius:var(--radius);
+  width:100%;
+  object-fit:cover;
+  aspect-ratio:4/5;
+  box-shadow:0 30px 60px -20px rgba(44,27,20,.35);
+}
+.hero-stamp{
+  position:absolute;
+  bottom:-28px;
+  left:-28px;
+  width:120px; height:120px;
+  background:var(--cream);
+  border:2px dashed var(--caramel);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-family:var(--font-mono);
+  font-size:.65rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--coffee-dark);
+  padding:10px;
+  transform:rotate(-8deg);
+  box-shadow:0 10px 25px -10px rgba(44,27,20,.4);
+}
+
+/* ---------- Secciones genéricas ---------- */
+section{ padding:5rem 0; position:relative; }
+.section-title{ font-size:clamp(2rem,4vw,2.8rem); margin-bottom:.5rem; }
+.section-sub{ color:#5a453a; max-width:560px; }
+
+.bg-dark-coffee{ background:var(--coffee-dark); color:var(--cream-2); }
+.bg-dark-coffee h1,.bg-dark-coffee h2,.bg-dark-coffee h3{ color:var(--cream); }
+.bg-cream-2{ background:var(--cream-2); }
+.bg-sage{ background:var(--sage); color:#fff; }
+
+/* ---------- Ticket / recibo (elemento firma) ---------- */
+.ticket{
+  background:#fff;
+  border-radius:4px;
+  padding:1.8rem 1.5rem;
+  position:relative;
+  box-shadow:0 15px 35px -18px rgba(44,27,20,.3);
+  height:100%;
+}
+.ticket::before,
+.ticket::after{
+  content:"";
+  position:absolute;
+  left:0; right:0;
+  height:14px;
+  background-image: radial-gradient(circle, var(--cream) 6px, transparent 6.5px);
+  background-size: 22px 22px;
+  background-position: -4px center;
+  background-repeat: repeat-x;
+}
+.ticket::before{ top:-7px; }
+.ticket::after{ bottom:-7px; }
+.ticket .ticket-icon{
+  width:52px; height:52px;
+  border-radius:50%;
+  background:var(--cream-2);
+  color:var(--coffee-dark);
+  display:flex; align-items:center; justify-content:center;
+  font-size:1.3rem;
+  margin-bottom:1rem;
+}
+.ticket .price{
+  font-family:var(--font-mono);
+  font-weight:700;
+  color:var(--caramel);
+}
+.ticket-divider{
+  border:none;
+  border-top:1px dashed rgba(44,27,20,.25);
+  margin:.9rem 0;
+}
+
+/* ---------- Cards de menú ---------- */
+.menu-item{
+  display:flex;
+  justify-content:space-between;
+  gap:1rem;
+  padding:1rem 0;
+  border-bottom:1px dashed rgba(44,27,20,.2);
+}
+.menu-item:last-child{ border-bottom:none; }
+.menu-item h5{ font-family:var(--font-display); color:var(--coffee-dark); margin-bottom:.15rem; }
+.menu-item p{ color:#6a5648; font-size:.92rem; margin-bottom:0; }
+.menu-item .price{
+  font-family:var(--font-mono);
+  font-weight:700;
+  color:var(--caramel);
+  white-space:nowrap;
+}
+.menu-cat-btn{
+  font-family:var(--font-mono);
+  font-size:.8rem;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  border:1.5px solid var(--coffee-dark);
+  color:var(--coffee-dark);
+  background:transparent;
+  border-radius:50px;
+  padding:.5rem 1.1rem;
+  transition:.2s;
+}
+.menu-cat-btn.active,.menu-cat-btn:hover{
+  background:var(--coffee-dark);
+  color:var(--cream);
+}
+
+/* ---------- Equipo / Nosotros ---------- */
+.team-card img{
+  border-radius:var(--radius);
+  aspect-ratio:1/1;
+  object-fit:cover;
+  width:100%;
+  margin-bottom:1rem;
+}
+.timeline{ position:relative; padding-left:2rem; border-left:2px dashed var(--caramel); }
+.timeline-item{ position:relative; padding-bottom:2.2rem; }
+.timeline-item:last-child{ padding-bottom:0; }
+.timeline-item::before{
+  content:"";
+  position:absolute;
+  left:-2.55rem;
+  top:.15rem;
+  width:14px; height:14px;
+  border-radius:50%;
+  background:var(--caramel);
+  border:3px solid var(--cream);
+}
+.timeline-year{
+  font-family:var(--font-mono);
+  color:var(--caramel);
+  font-weight:700;
+  font-size:.85rem;
+}
+
+/* ---------- Testimonios / carrusel ---------- */
+.swiper{ padding-bottom:3rem; }
+.testi-card{
+  background:#fff;
+  border-radius:var(--radius);
+  padding:2rem;
+  height:100%;
+  box-shadow:0 15px 35px -18px rgba(44,27,20,.25);
+}
+.testi-card .stars{ color:var(--gold); margin-bottom:.8rem; }
+.swiper-pagination-bullet-active{ background:var(--caramel)!important; }
+
+/* ---------- Servicios ---------- */
+.service-row{
+  display:flex;
+  gap:1.5rem;
+  align-items:flex-start;
+  padding:2rem 0;
+  border-bottom:1px solid rgba(44,27,20,.12);
+}
+.service-row:last-child{ border-bottom:none; }
+.service-num{
+  font-family:var(--font-mono);
+  color:var(--caramel);
+  font-weight:700;
+  font-size:1rem;
+  min-width:3rem;
+}
+
+/* ---------- Formulario de contacto ---------- */
+.form-aroma label{
+  font-family:var(--font-mono);
+  font-size:.78rem;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  color:var(--coffee-dark);
+  margin-bottom:.3rem;
+}
+.form-aroma .form-control,
+.form-aroma .form-select{
+  background:#fff;
+  border:1.5px solid rgba(44,27,20,.2);
+  border-radius:10px;
+  padding:.7rem .9rem;
+}
+.form-aroma .form-control:focus,
+.form-aroma .form-select:focus{
+  border-color:var(--caramel);
+  box-shadow:0 0 0 .2rem rgba(192,133,82,.2);
+}
+
+/* ---------- Footer ---------- */
+footer.site-footer{
+  background:var(--coffee-dark);
+  color:var(--cream-2);
+  padding:3.5rem 0 1.5rem;
+}
+footer.site-footer h5{ color:var(--cream); font-family:var(--font-display); }
+footer.site-footer a{ color:var(--cream-2); }
+footer.site-footer a:hover{ color:var(--caramel); }
+footer.site-footer .social-icon{
+  width:38px; height:38px;
+  border:1px solid rgba(251,243,231,.3);
+  border-radius:50%;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-right:.5rem;
+  transition:.2s;
+}
+footer.site-footer .social-icon:hover{ background:var(--caramel); border-color:var(--caramel); color:var(--coffee-dark); }
+.fine-print{
+  border-top:1px solid rgba(251,243,231,.15);
+  margin-top:2rem;
+  padding-top:1.2rem;
+  font-family:var(--font-mono);
+  font-size:.78rem;
+  color:rgba(251,243,231,.55);
+}
+
+/* ---------- Responsive helpers ---------- */
+@media (max-width:991px){
+  .hero{ padding:4rem 0 3rem; text-align:center; }
+  .hero .lead{ margin-left:auto; margin-right:auto; }
+  .hero-stamp{ display:none; }
+}
+
+/* ---------- Accesibilidad ---------- */
+a:focus-visible, button:focus-visible, .btn:focus-visible{
+  outline:3px solid var(--caramel);
+  outline-offset:2px;
+}
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  *{ animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; }
+}

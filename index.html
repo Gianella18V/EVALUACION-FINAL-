@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aroma — Cafetería de especialidad</title>
+<meta name="description" content="Aroma, cafetería de especialidad. Café de origen, repostería artesanal y un espacio pensado para quedarte.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5.3 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- AOS (Animate On Scroll) -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Swiper -->
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Estilos propios -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ======== NAVBAR ======== -->
+<nav class="navbar navbar-expand-lg navbar-aroma sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="fa-solid fa-mug-hot"></i> Aroma</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item ms-lg-3"><a class="btn-aroma" href="contacto.html">Reservar mesa</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ======== HERO ======== -->
+<header class="hero">
+  <div class="coffee-ring" style="width:340px;height:340px;top:-80px;right:-100px;"></div>
+  <div class="coffee-ring" style="width:180px;height:180px;bottom:20px;left:-60px;"></div>
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <p class="eyebrow mb-3">Café de especialidad · Lima</p>
+        <h1 class="mb-4">El aroma que empieza tu mejor momento del día.</h1>
+        <p class="lead mb-4">En Aroma tostamos grano seleccionado de pequeños productores y lo convertimos en tazas con carácter. Un lugar para trabajar, conversar o simplemente hacer una pausa.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="menu.html" class="btn-aroma">Ver el menú</a>
+          <a href="nosotros.html" class="btn-outline-aroma">Conócenos</a>
+        </div>
+        <div class="d-flex gap-4 mt-5">
+          <div>
+            <h3 class="mb-0">12</h3>
+            <p class="eyebrow mb-0">años de historia</p>
+          </div>
+          <div>
+            <h3 class="mb-0">8</h3>
+            <p class="eyebrow mb-0">orígenes de café</p>
+          </div>
+          <div>
+            <h3 class="mb-0">4.9</h3>
+            <p class="eyebrow mb-0">calificación</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="hero-img-wrap">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Barista sirviendo un café con arte latte en Aroma">
+          <div class="hero-stamp">Tostado artesanal desde 2013</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ======== DESTACADOS ======== -->
+<section id="destacados">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6" data-aos="fade-up">
+        <p class="eyebrow mb-2">Lo más pedido</p>
+        <h2 class="section-title">Nuestros destacados</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="ticket">
+          <div class="ticket-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+          <h5>Flat White Aroma</h5>
+          <p class="mb-2" style="color:#6a5648;">Espresso doble con leche vaporizada a punto de seda.</p>
+          <hr class="ticket-divider">
+          <span class="price">S/ 12.50</span>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="ticket">
+          <div class="ticket-icon"><i class="fa-solid fa-snowflake"></i></div>
+          <h5>Cold Brew de origen</h5>
+          <p class="mb-2" style="color:#6a5648;">Extracción en frío 16 horas, notas a cacao y panela.</p>
+          <hr class="ticket-divider">
+          <span class="price">S/ 14.00</span>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="ticket">
+          <div class="ticket-icon"><i class="fa-solid fa-cookie"></i></div>
+          <h5>Alfajor de algarrobina</h5>
+          <p class="mb-2" style="color:#6a5648;">Receta de casa, horneado fresco todas las mañanas.</p>
+          <hr class="ticket-divider">
+          <span class="price">S/ 8.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== GALERÍA / SWIPER ======== -->
+<section class="bg-cream-2">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6" data-aos="fade-up">
+        <p class="eyebrow mb-2">Un vistazo</p>
+        <h2 class="section-title">Dentro de Aroma</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="swiper aroma-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper pb-4">
+        <div class="swiper-slide">
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=700&q=80" class="w-100" style="border-radius:var(--radius);aspect-ratio:4/3;object-fit:cover;" alt="Interior de la cafetería Aroma">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" class="w-100" style="border-radius:var(--radius);aspect-ratio:4/3;object-fit:cover;" alt="Granos de café tostado">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=700&q=80" class="w-100" style="border-radius:var(--radius);aspect-ratio:4/3;object-fit:cover;" alt="Taza de café sobre la mesa">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=700&q=80" class="w-100" style="border-radius:var(--radius);aspect-ratio:4/3;object-fit:cover;" alt="Barra de atención en Aroma">
+        </div>
+      </div>
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== TESTIMONIOS ======== -->
+<section>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6" data-aos="fade-up">
+        <p class="eyebrow mb-2">Lo que dicen</p>
+        <h2 class="section-title">Clientes que vuelven</h2>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="testi-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"El flat white es mi ritual de cada mañana antes de entrar a clases. Ambiente tranquilo para leer."</p>
+          <p class="eyebrow mb-0">— Camila R.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="testi-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Trabajo remoto casi todos los días desde aquí, el wifi es estable y el café nunca falla."</p>
+          <p class="eyebrow mb-0">— Diego M.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="testi-card">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+          <p>"Pedimos el catering para un evento pequeño de la oficina y quedó todo el equipo encantado."</p>
+          <p class="eyebrow mb-0">— Valeria S.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== CTA ======== -->
+<section class="bg-dark-coffee text-center">
+  <div class="container" data-aos="zoom-in">
+    <p class="eyebrow mb-2" style="color:var(--gold);">Te esperamos</p>
+    <h2 class="mb-4">Ven por tu taza, quédate por el momento.</h2>
+    <a href="contacto.html" class="btn-aroma">Reservar una mesa</a>
+  </div>
+</section>
+
+<!-- ======== FOOTER ======== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h5><i class="fa-solid fa-mug-hot"></i> Aroma</h5>
+        <p class="mt-2" style="color:var(--cream-2);">Café de especialidad tostado en Lima. Un espacio hecho para pausas con sentido.</p>
+        <div class="mt-3">
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Navegación</h5>
+        <ul class="list-unstyled mt-2">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6">
+        <h5>Horario</h5>
+        <ul class="list-unstyled mt-2" style="color:var(--cream-2);">
+          <li>Lun – Vie: 7:00 am – 9:00 pm</li>
+          <li>Sáb – Dom: 8:00 am – 10:00 pm</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5>Contacto</h5>
+        <ul class="list-unstyled mt-2" style="color:var(--cream-2);">
+          <li><i class="fa-solid fa-location-dot me-2"></i>Av. Los Cafetos 245, Lima</li>
+          <li><i class="fa-solid fa-phone me-2"></i>+51 999 888 777</li>
+          <li><i class="fa-solid fa-envelope me-2"></i>hola@aroma.pe</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine-print text-center">© 2026 Aroma Cafetería. Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<!-- Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Script propio -->
+<script src="js/script.js"></script>
+</body>
+</html>
