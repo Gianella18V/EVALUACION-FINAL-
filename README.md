@@ -37,4 +37,4 @@ aroma-cafeteria/
 
 ## Autor
 
-Proyecto desarrollado para la evaluación integral del curso de Diseño y Desarrollo Web.
+Proyecto desarrollado para la evaluación integral del curso de Diseño y Desarrollo Web por Gianella Vassallo.
